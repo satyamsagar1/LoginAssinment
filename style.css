@@ -20,7 +20,7 @@
     }
 
     .login-container {
-      background: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.8);
       padding: 2rem;
       width: 400px;
       border-radius: 12px;
@@ -76,6 +76,7 @@
 
     .remember{
         display: flex;
+        margin:0;
     }
 
     .checkbox{
@@ -86,10 +87,11 @@
         margin: 0;
     }
     .forgot{
+      display:flex;
         color: #ccc;
         text-decoration: underline;
-        font-size: x-small;
-        margin: 0px 0 0 100px;
+        font-size:xx-small;
+        margin: 0px 0 0 150px;
     }
 
     button {
