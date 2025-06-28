@@ -1,0 +1,118 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      background: url('aaron-burden-wPy71r8Hi_s-unsplash.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      width: 400px;
+      border-radius: 12px;
+      color: #fff;
+      position: relative;
+    }
+
+    .tabs {
+      display: flex;
+      margin-bottom: 1.5rem;
+    }
+
+    .tabs div {
+      flex: 1;
+      text-align: center;
+      padding: 0.75rem;
+      background-color: #3a1f16;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 6px 6px 0 0;
+    }
+
+    .tabs .active {
+      background-color: #552f23;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    h5 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-weight: normal;
+      color: #ccc;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1.5rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #552f23;
+      color: #fff;
+    }
+
+    .remember{
+        display: flex;
+    }
+
+    .checkbox{
+        display: flex;
+        font-size: x-small;
+        gap: 0.5rem;
+        white-space: nowrap;
+        margin: 0;
+    }
+    .forgot{
+        color: #ccc;
+        text-decoration: underline;
+        font-size: x-small;
+        margin: 0px 0 0 100px;
+    }
+
+    button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #6a3a2d;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #8a4e3c;
+      transition: ease-in-out 0.3s;
+    }
+
+    @media (max-width: 500px) {
+        .login-container {
+            width: 75vw;
+            min-width: 0;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+    }
