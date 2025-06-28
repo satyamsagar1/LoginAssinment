@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
+  <title>Fantasy Login Page</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   
@@ -28,12 +28,45 @@
         <input type="checkbox"> REMEMBER ME</input>
       </div>
       <div class="forgot">
-        <a  href="#" style="color: #ccc; text-decoration: none;">FORGOT YOUR PASSWORD? CLICK HERE</a>
+        <a  href="#" style="color: #ccc; text-decoration: none;">FORGOT YOUR PASSWORD?</a>
       </div>
       </div>
 
       <button type="submit">LOGIN TO YOUR ACCOUNT</button>
     </form>
   </div>
+
+  <script>
+    document.querySelectorAll('.tabs div')[1].onclick = function() {
+      document.querySelector('.login-container').innerHTML = `
+        <div class="tabs">
+          <div>LOGIN</div>
+          <div class="active">REGISTER</div>
+        </div>
+        <h2>CREATE ACCOUNT</h2>
+        <h5>JOIN US TODAY!</h5>
+        <form id="registerForm">
+          <label for="reg-email">YOUR EMAIL </label>
+          <input type="email" id="reg-email" placeholder="your@email.com" required>
+
+          <label for="reg-password">CREATE PASSWORD </label>
+          <input type="password" id="reg-password" required>
+
+          <label for="reg-confirm-password">CONFIRM PASSWORD </label>
+          <input type="password" id="reg-confirm-password" required>
+
+          <button type="submit">REGISTER</button>
+        </form>
+      `;
+      document.querySelectorAll('.tabs div')[0].onclick = function() {
+        location.reload();
+      };
+
+      document.getElementById('registerForm').onsubmit = function(e) {
+        e.preventDefault();
+        alert('Registration submitted!');
+      };
+    };
+  </script>
 </body>
 </html>
